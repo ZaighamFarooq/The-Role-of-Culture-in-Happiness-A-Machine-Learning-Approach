@@ -1,23 +1,24 @@
 # Note- This project was an MSc Dissertation project from 2022.
+### Dataset Link - https://www.kaggle.com/datasets/usamabuttar/world-happiness-report-2005-present
 
 
-## The-Role-of-Culture-in-Happiness-A-Machine-Learning-Approach
+# The-Role-of-Culture-in-Happiness-A-Machine-Learning-Approach
 This thesis investigates how cultural factors influence happiness using machine learning models applied to the World Happiness Report dataset, highlighting key social, economic, and perception variables.
 
-# Introduction to Happiness and Cultural Impact-
+### Introduction to Happiness and Cultural Impact-
 Happiness is a complex emotion influenced by genetics, personality, life experiences, and culture, with increasing global interest in understanding its determinants for policy development.﻿Happiness is associated with well-being, health, longevity, and societal benefits.﻿The UN adopted happiness as a fundamental human goal in 2011, encouraging countries to measure subjective well-being.﻿Bhutan prioritizes Gross National Happiness over material wealth since the 1970s.﻿Culture significantly impacts happiness, with collectivist societies often reporting higher well-being.﻿Previous studies link social relationships, values, and perceptions of corruption to happiness levels.﻿
 
-# Literature Review on Happiness and Machine Learning-
+### Literature Review on Happiness and Machine Learning-
 Extensive research explores subjective well-being, with machine learning increasingly used to analyze determinants like income, social support, and cultural factors.Studies employed methods like quantile regression, clustering, neural networks, and classifiers.Machine learning models achieved accuracy rates from 71% to 82% in predicting happiness.﻿Key variables influencing happiness include income, social support, trust, corruption perception, and health.﻿Research shows higher income correlates with increased happiness up to a threshold (~27,913 Euros/year).﻿Cultural context moderates relationships between work-family conflict and happiness.﻿Text mining and physiological data have been used to predict happiness with accuracies around 75-80%.﻿
 
-# Data Preprocessing and Descriptive Analysis-
+### Data Preprocessing and Descriptive Analysis-
 The dataset contains 13 features, including categorical (Country, Region) and numerical variables, with 2199 total rows from 2005-2022.﻿Missing values were identified via heat maps and removed; no duplicates found.﻿Key features include Life Ladder (scale 0-10), Log GDP per capita, Social support, Generosity, Positive/Negative affect, Life expectancy, Perception of corruption, and Trust in government.﻿Descriptive stats show mean Life Ladder ~5.48, with variation across countries and years.Log GDP per capita ranges from 5.52 to 11.66; higher GDP correlates with higher happiness.﻿Social support and health expectancy also positively relate to happiness; perception of corruption and negative affect inversely relate.Distribution histograms indicate a slight skew towards higher happiness scores.
 
-# Country and Regional Happiness Insights-
+### Country and Regional Happiness Insights-
 Most and least happy countries identified, along with corruption and social support levels.﻿Top 5 happiest countries in 2022: Denmark, Finland, Switzerland, Norway, Netherlands.﻿Bottom 5 least happy countries: Afghanistan, Togo, Rwanda, Burundi, Tanzania.﻿Most corrupt countries: Romania, Bosnia, Bulgaria, Ukraine, Moldova.﻿Least corrupt countries: Singapore, Denmark, Rwanda, Finland, Sweden.﻿Most social countries: Iceland, Denmark, New Zealand, Ireland, Finland.﻿Least social countries: Burundi, Togo, Benin, Afghanistan, Rwanda.﻿Happiness varies by region: North America and ANZ are happiest (~7.24), South Asia and Sub-Saharan Africa are least.﻿Social support and perceptions of corruption also vary regionally, affecting overall happiness.
 
-# Feature Engineering and Correlation Analysis-
+### Feature Engineering and Correlation Analysis-
 Exploratory analysis reveals relationships between variables and happiness, with Pearson correlation coefficients and significance levels.﻿Log GDP per capita strongly correlates with happiness (r=0.79, p=0.0).﻿Social support shows a strong positive correlation (r=0.72, p≈0).﻿Perception of corruption has a moderate negative correlation (r=-0.49, p≈0).﻿Healthy life expectancy at birth correlates positively with happiness (r=0.74, p≈0).﻿Freedom to make life choices also positively correlates (r=0.54, p≈0).﻿All correlations are statistically significant, supporting the influence of these factors on happiness.
 
-# Conclusion Summary-
+### Conclusion Summary-
 The study identified key factors influencing happiness, with the Random Forest model providing the best predictive performance.Denmark was the happiest country in 2022; Afghanistan was the lowest.﻿GDP per capita and social support positively impact happiness.﻿Perception of corruption and confidence in government negatively affect happiness.The target variable was created by splitting 'Life Ladder' at the mean.﻿Random Forest achieved 0.91 accuracy, making it the recommended model.Future hyperparameter tuning could further enhance model performance.﻿The research demonstrates effective machine learning application for cross-national happiness prediction.﻿
